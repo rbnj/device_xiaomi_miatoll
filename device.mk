@@ -56,9 +56,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
     audio.offload.min.duration.secs=30 \
 
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.config.vc_call_vol_steps=10
-
-PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
+    ro.config.vc_call_vol_steps=10 \
     ro.vendor.audio.spk.clean=true \
     ro.vendor.audio.soundfx.type=mi \
     ro.vendor.audio.vocal.support=false \
