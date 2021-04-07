@@ -23,9 +23,9 @@ $(call inherit-product, vendor/hentai/config/common.mk)
 # Device identifier
 PRODUCT_NAME := hentai_miatoll
 PRODUCT_DEVICE := miatoll
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Miatoll
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_BRAND := xiaomi
+PRODUCT_MODEL := miatoll
+PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Bootanimation
