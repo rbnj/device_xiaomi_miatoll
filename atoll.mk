@@ -190,6 +190,14 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Kernel
+LOCAL_KERNEL := device/xiaomi/miatoll-kernel/Image.gz
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
+# Kernel headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/miatoll-kernel/sm6250/kernel-headers
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.xiaomi_atoll
