@@ -187,6 +187,8 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Selinux
+SELINUX_IGNORE_NEVERALLOWS := true
+
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += \
