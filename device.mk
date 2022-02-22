@@ -68,7 +68,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.sfx.scenario=false \
     ro.vendor.audio.sfx.earadj=false \
     ro.vendor.audio.soundfx.usb=true \
-    vendor.audio.offload.track.enable=false
+    vendor.audio.offload.track.enable=true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
