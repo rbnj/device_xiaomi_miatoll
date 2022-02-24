@@ -63,7 +63,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -133,6 +134,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_atoll
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor
+
 # GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
@@ -190,6 +196,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.xiaomi_atoll
@@ -227,6 +238,13 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/xiaomi \
     vendor/qcom/opensource/commonsys-intf/display
+
+# Netmgr
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -339,7 +357,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl \
+    libwpa_client \
     libxml2
+
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor
+
+# Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -406,9 +434,6 @@ $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
 PRODUCT_PACKAGES += \
     vndservicemanager
 
-# VNDK
-$(foreach target, $(shell cat $(LOCAL_PATH)/configs/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
-
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
@@ -420,7 +445,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
-    libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
