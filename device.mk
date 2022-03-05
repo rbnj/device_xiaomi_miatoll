@@ -279,7 +279,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_atoll
+    android.hardware.lights-service.xiaomi_miatoll
 
 # Media
 PRODUCT_PACKAGES += \
