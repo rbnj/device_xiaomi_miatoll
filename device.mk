@@ -134,11 +134,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-# Dexopt
-PRODUCT_SYSTEM_PROPERTIES += \
-    pm.dexopt.first-boot=quicken
-    pm.dexopt.bg-dexopt=everything
-
 # Display / Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-impl \
