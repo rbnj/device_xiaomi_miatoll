@@ -383,10 +383,13 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    MiatollCarrierConfig \
+    MiatollFrameworks \
+    MiatollSettings \
+    MiatollSystemUI \
+    MiatollTelephony \
+    WifiOverlay
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -612,7 +615,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.2.vendor \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
