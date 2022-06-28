@@ -350,6 +350,8 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
 # NFC
+TARGET_NFC_SKU := joyeuse
+
 PRODUCT_PACKAGES += \
     NfcNci \
     Tag
