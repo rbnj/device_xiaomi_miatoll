@@ -491,8 +491,9 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.sensors.allow_non_default_discovery=true \
     persist.vendor.sensors.enable.mag_filter=true \
-    persist.vendor.sensors.allow_non_default_discovery=true
+    persist.vendor.sensors.support_direct_channel=false
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
