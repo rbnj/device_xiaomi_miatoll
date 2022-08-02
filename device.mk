@@ -154,8 +154,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.sf.native_mode=2 \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
-    ro.opengles.version=196610 \
-    vendor.gralloc.disable_ubwc=0
+    ro.opengles.version=196610
 
 # DPM
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -442,10 +441,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-# Qualcomm System Daemon
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.qcomsysd.enabled=1
 
 # QMI
 PRODUCT_PACKAGES += \
