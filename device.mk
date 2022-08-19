@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
+    libpiex_shim \
     libstdc++.vendor
 
 PRODUCT_SYSTEM_PROPERTIES += \
