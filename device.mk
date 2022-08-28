@@ -8,8 +8,9 @@
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+# ANT+
+PRODUCT_PACKAGES += \
+    com.dsi.ant@1.0.vendor
 
 # Audio
 PRODUCT_PACKAGES += \
