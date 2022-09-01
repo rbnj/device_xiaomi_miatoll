@@ -368,7 +368,7 @@ PRODUCT_PACKAGES += \
     MiatollSettings \
     MiatollSystemUI \
     MiatollTelephony \
-    WifiOverlay
+    MiatollWifiOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
