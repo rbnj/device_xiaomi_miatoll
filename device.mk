@@ -503,10 +503,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM6250
 
-# SSR
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
