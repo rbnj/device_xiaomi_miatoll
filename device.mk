@@ -363,11 +363,11 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    MiatollCarrierConfig \
-    MiatollFrameworks \
-    MiatollSettings \
-    MiatollSystemUI \
-    MiatollTelephony \
+    MiatollCarrierConfigOverlay \
+    MiatollFrameworksOverlay \
+    MiatollSettingsOverlay \
+    MiatollSystemUIOverlay \
+    MiatollTelephonyOverlay \
     MiatollWifiOverlay
 
 # Partitions
