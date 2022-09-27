@@ -16,10 +16,10 @@
 
 #pragma once
 
+#include <android/hardware/thermal/2.0/IThermal.h>
+
 #include <string>
 #include <unordered_map>
-
-#include <android/hardware/thermal/2.0/IThermal.h>
 
 namespace android {
 namespace hardware {
