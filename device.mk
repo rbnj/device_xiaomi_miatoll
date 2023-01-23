@@ -90,21 +90,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.bluetooth.modem_nv_support=true
 
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
-    persist.bluetooth.a2dp_offload.disabled=false \
-    persist.vendor.bt.aac_frm_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
-    persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
-    persist.vendor.qcom.bluetooth.scram.enabled=false \
-    persist.vendor.qcom.bluetooth.soc=cherokee \
-    persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-    ro.bluetooth.a2dp_offload.supported=true \
-    ro.vendor.bluetooth.wipower=false \
-    vendor.qcom.bluetooth.soc=cherokee
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
