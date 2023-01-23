@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
 # Inherit some common WaveOS stuff.
-$(call inherit-product, vendor/wave/configs/common.mk)
+$(call inherit-product, vendor/wave/config/product.mk)
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
