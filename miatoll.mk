@@ -274,6 +274,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     $(LOCAL_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
 
+# Phantom process monitoring
+PRODUCT_PRODUCT_PROPERTIES += \
+    sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Platform
 TARGET_BOARD_PLATFORM := atoll
 
