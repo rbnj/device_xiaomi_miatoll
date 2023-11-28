@@ -266,10 +266,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.netflix.bsp_rev=Q6250-19132-1
 
-# Neural networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3.vendor
-
 # OMX
 PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor
