@@ -7,12 +7,12 @@
 runtime_resource_overlay {
     name: "MiatollWifiOverlay",
     manifest: "AndroidManifest.xml",
-    vendor: true,
+    device_specific: true,
 }
 
 runtime_resource_overlay {
     name: "MiatollWifiMainlineOverlay",
     manifest: "AndroidManifestMainline.xml",
-    vendor: true,
+    device_specific: true,
 }
 

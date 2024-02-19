@@ -60,6 +60,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.camera=xiaomi
 
 # Cutout
+PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay \
+    NoCutoutOverlay
+
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_hide_display_cutout=true
 
@@ -231,7 +235,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AOSPAMiatollFrameworksOverlay \
     AOSPAMiatollSettingsOverlay \
-    AvoidAppsInCutoutOverlay \
     MiatollApertureOverlay \
     MiatollCarrierConfigOverlay \
     MiatollFrameworksOverlay \
@@ -239,8 +242,7 @@ PRODUCT_PACKAGES += \
     MiatollSettingsOverlay \
     MiatollSystemUIOverlay \
     MiatollWifiOverlay \
-    MiatollWifiMainlineOverlay \
-    NoCutoutOverlay
+    MiatollWifiMainlineOverlay
 
 # ParanoidDoze
 PRODUCT_PACKAGES += \
@@ -254,14 +256,13 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 PRODUCT_PACKAGES += \
-    fstab.qcom \
+    fstab.qcom
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Perf
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     $(LOCAL_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
 
