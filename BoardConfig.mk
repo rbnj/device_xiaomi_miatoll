@@ -28,6 +28,9 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # Build
 BUILD_BROKEN_DUP_RULES := true
 
+# Camera
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.miatoll
+
 # Gestures
 TARGET_TAP_TO_WAKE_EVENT_NODE  := "/dev/input/event1"
 
