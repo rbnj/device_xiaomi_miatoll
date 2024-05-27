@@ -32,6 +32,9 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # CamID remap
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/remapid.prop
 
+# Camera
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.miatoll
+
 # Gestures
 TARGET_TAP_TO_WAKE_EVENT_NODE  := "/dev/input/event1"
 

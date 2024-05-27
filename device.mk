@@ -227,7 +227,8 @@ PRODUCT_PACKAGES += \
     init.miatoll.perf.rc \
     init.qti.dcvs.sh \
     init.sensors_fix.sh \
-    init.target.rc
+    init.target.rc \
+    ueventd.miatoll.rc
 
 # IR
 PRODUCT_PACKAGES += \

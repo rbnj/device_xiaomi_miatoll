@@ -43,6 +43,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "ueventd.miatoll.rc",
+    src: "ueventd.rc",
+    filename_from_src: true,
+    device_specific: true
+}
+
 sh_binary {
     name: "init.qti.dcvs.sh",
     src: "init.qti.dcvs.sh",
