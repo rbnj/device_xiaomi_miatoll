@@ -245,6 +245,7 @@ PRODUCT_PACKAGES += \
     AOSPAMiatollSettingsOverlay \
     MiatollApertureOverlay \
     MiatollCarrierConfigOverlay \
+    MiatollDeviceAsWebcamOverlay \
     MiatollFrameworksOverlay \
     MiatollNfcOverlay \
     MiatollSettingsOverlay \
@@ -347,11 +348,17 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.usb.config=mtp,adb
 endif
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.usb.uvc.enabled=true
+
 PRODUCT_HAS_GADGET_HAL := true
 
 PRODUCT_ODM_PROPERTIES += \
     sys.usb.mtp.batchcancel=1 \
     vendor.usb.use_ffs_mtp=1
+
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3-service.dual_role_usb
 
 # Vendor blobs
 $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
