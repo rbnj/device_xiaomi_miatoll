@@ -347,6 +347,12 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.usb.config=mtp,adb
 endif
 
+PRODUCT_HAS_GADGET_HAL := true
+
+PRODUCT_ODM_PROPERTIES += \
+    sys.usb.mtp.batchcancel=1 \
+    vendor.usb.use_ffs_mtp=1
+
 # Vendor blobs
 $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
 
