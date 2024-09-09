@@ -742,12 +742,6 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|7b67b47030f00af1c2e207995
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|6585b5976a98053fb4d2b51c32337ebe8960d427
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|61d7c35edb403f8de4be2e483431cb26109ef0ae
 
-# PASR
-vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
-vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
-vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
-vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
-
 # Performance
 vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lm/prekill/prekill_4GB.data
