@@ -16,15 +16,6 @@ include $(CLEAR_VARS)
 
 ALL_DEFAULT_INSTALLED_MODULES += \
     $(CNE_SYMLINKS) \
-    $(FACTORY_MOUNT_POINT_SYMLINK) \
-    $(WLAN_FIRMWARE_SYMLINKS)
-
-# WiFi firmware symlinks
-WLAN_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld
-$(WLAN_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	mkdir -p $@/qca6390
-	@echo "Creating WLAN firmware symlinks: $@"
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
-	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin
+    $(FACTORY_MOUNT_POINT_SYMLINK)
 
 endif
