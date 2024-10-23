@@ -71,6 +71,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Display / Graphics
+TARGET_USE_AIDL_QTI_MEMTRACK := true
+
 PRODUCT_PACKAGES += \
     disable_configstore
 
