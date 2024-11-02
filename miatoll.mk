@@ -316,6 +316,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.report_codec=1 \
     ro.telephony.iwlan_operation_mode=legacy
 
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
