@@ -70,6 +70,16 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Dex-preopt/Art
+ART_BUILD_TARGET_NDEBUG := true
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := true
+ART_BUILD_HOST_DEBUG := false
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything-profile
+DONT_DEXPREOPT_PREBUILTS := true
+
 # Display / Graphics
 PRODUCT_PACKAGES += \
     disable_configstore
