@@ -555,6 +555,12 @@ vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e00
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
 vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|6a90768687848c372c88446f667d51e68cc9ae22
+vendor/lib/libasn1cper.so|2954e15ff83546d68e5af28b70ca686ed30270df
+vendor/lib/libasn1crt.so|c3878219517744042f77f725cc34a99e77298e84
+vendor/lib/libasn1crtx.so|3c7a750025e32ee391a811b047da6363f4e90362
+vendor/lib64/libasn1cper.so|639151d49eb3bd745aad020c36d66c896ed20da2
+vendor/lib64/libasn1crt.so|1d005f2711dd7a1f7b7a9f8d5efc4542cdec59d6
+vendor/lib64/libasn1crtx.so|c30ee415b03928842836e40e62fe987200ae8cee
 vendor/lib64/libcdfw.so|55d33db3a8339cf4e051b5d8ce615712a19612d7
 vendor/lib64/libcdfw_remote_api.so|faaf6c57e4c1c40d5e604d6932704bf63d883e96
 vendor/lib64/libdataitems.so|ac2c6975b584bdf745d09b15aeb3fd3445ab1b71
