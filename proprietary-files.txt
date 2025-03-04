@@ -496,6 +496,7 @@ vendor/lib64/libsi.so|fd31cea9195a0b6eb68b5454f1d902f8df61bd85
 vendor/lib64/libssd.so|1065e7c0baeafc24787e6c0b6a885b6de87efcba
 vendor/lib64/libtrustedapploader.so|e9ebd0130381cf60219d4c511a8e6908684cb7ab
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|1b4c92c07ed5ba3f053e10a11f2bc1232ad45375
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|c21558acb926255cf2beabc78d3afea0731fb5e0
 
 # DRM - Widevine
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
