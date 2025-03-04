@@ -30,6 +30,7 @@ function vendor_imports() {
         "hardware/xiaomi",
         "vendor/qcom/common/system/display",
         "vendor/qcom/common/vendor/adreno-r",
+        "vendor/qcom/common/vendor/display",
         "vendor/qcom/common/vendor/display/4.14",
         "vendor/qcom/common/vendor/gps-legacy",
         "vendor/qcom/common/vendor/media-legacy",
@@ -42,7 +43,26 @@ function lib_to_package_fixup_vendor_variants() {
     fi
 
     case "$1" in
-        vendor.qti.hardware.fm@1.0)
+        com.qualcomm.qti.dpm.api@1.0 | \
+        com.qualcomm.qti.imscmservice* | \
+        com.qualcomm.qti.uceservice* | \
+        libmegface | \
+        libmmosal | \
+        vendor.display.color* | \
+        vendor.display.postproc@1.0 | \
+        vendor.qti.data.* | \
+        vendor.qti.hardware.data.* | \
+        vendor.qti.hardware.embmssl* | \
+        vendor.qti.hardware.fm@1.0 | \
+        vendor.qti.hardware.mwqemadapter@1.0 | \
+        vendor.qti.hardware.qccsyshal@1.0 | \
+        vendor.qti.hardware.qccvndhal@1.0 | \
+        vendor.qti.hardware.radio.* | \
+        vendor.qti.hardware.slmadapter@1.0 | \
+        vendor.qti.hardware.wifidisplaysession@1.0 | \
+        vendor.qti.imsrtpservice@3.0 | \
+        vendor.qti.ims.* | \
+        vendor.qti.latency*)
             echo "$1_vendor"
             ;;
             libwpa_client)
