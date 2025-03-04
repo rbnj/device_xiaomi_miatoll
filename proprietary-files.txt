@@ -474,6 +474,7 @@ vendor/bin/qseecomd|f9abaff97590c1c6fa78e8024d0eae81539be06a
 vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
 vendor/etc/init/qseecomd.rc|0ebfb7c5d1d2459be4fdac951a182dc486f3bda7
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
+vendor/lib/libQSEEComAPI.so|f9e76d524d0c7154e798d2c41dcc99924b08aac9
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|f46ad0aeab8e21fcf5adfcc977efb9e10a96bf3d
 vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
 vendor/lib64/libGPreqcancel_svc.so|3daa01c698c098673facea4df99fa670b717e764
@@ -651,6 +652,7 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.atoll.so
 # Keymaster - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|db1f33e0034b30ff733c22db53262fde033c2b0d
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|9816f37e7487295e29a19d05c4a3e6b7b0ec35ea
+vendor/lib/libqcbor.so|e61ed8f9546ca363fd394ad747b640bb3df60828
 vendor/lib64/libkeymasterdeviceutils.so|15af23f261554c47b5f490f0fe68c15abe87cda8
 vendor/lib64/libkeymasterutils.so|2392abef423c0610d9625670f1ff3063532e9bc1
 vendor/lib64/libqcbor.so|7da5294a577f5a71ede5b3804a026bf69bd025ee
@@ -780,6 +782,7 @@ vendor/lib/libqmi_client_qmux.so|b90022ab3e6ab0265a2ffa95b33d8f103a92a15e
 vendor/lib/libqmi_common_so.so|ff25aa6185ebf0700fd5c7d913f383bcd09ea866
 vendor/lib/libqmi_csi.so|77e088094a86d9eab9fcdc3a86fb12b82f4c5d22
 vendor/lib/libqmi_encdec.so|d8642bf7e8193db310dafad8116222f3b3d9013a
+vendor/lib/libqmi_legacy.so|fb206ffddcc1ef4cc6422e1ff8c5f328a14d2ebc
 vendor/lib/libqmiservices.so|54a2417ab396730b26a2a29e32531d637aa800fc
 vendor/lib64/libdiag.so|8ab005e8965d8728f042cd1739c28f47a1daaaaa
 vendor/lib64/libdsutils.so|3d5c79c01c20251afab22cba199d1e4bf2996590
