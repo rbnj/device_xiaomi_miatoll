@@ -1,9 +1,8 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
-# Copyright (C) 2024 Paranoid Android
-#
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+# SPDX-FileCopyrightText: 2024 Paranoid Android
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -12,7 +11,7 @@ set -e
 DEVICE=miatoll
 VENDOR=xiaomi
 
-# Load extract utilities and do some sanity checks.
+# Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
@@ -25,7 +24,7 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-# Default to sanitizing the vendor folder before extraction.
+# Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
 KANG=
@@ -33,19 +32,20 @@ SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
-        -n | --no-cleanup )
-                CLEAN_VENDOR=false
-                ;;
-        -k | --kang )
-                KANG="--kang"
-                ;;
-        -s | --section )
-                SECTION="${2}"; shift
-                CLEAN_VENDOR=false
-                ;;
-        * )
-                SRC="${1}"
-                ;;
+        -n | --no-cleanup)
+            CLEAN_VENDOR=false
+            ;;
+        -k | --kang)
+            KANG="--kang"
+            ;;
+        -s | --section)
+            SECTION="${2}"
+            shift
+            CLEAN_VENDOR=false
+            ;;
+        *)
+            SRC="${1}"
+            ;;
     esac
     shift
 done
@@ -61,6 +61,7 @@ function blob_fixup() {
             sed -i "s/0x1F/0x0/g" "${2}"
             ;;
         vendor/lib64/camera/components/com.qti.node.watermark.so)
+            [ "$2" = "" ] && return 0
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
         vendor/etc/seccomp_policy/atfwd@2.0.policy)
@@ -71,10 +72,19 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcrypto-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "$2"
             ;;
+        *)
+            return 1
+            ;;
     esac
+
+    return 0
 }
 
-# Initialize the helper.
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
+}
+
+# Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
