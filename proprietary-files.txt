@@ -512,7 +512,7 @@ vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
-vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libgoodixhwfingerprint.so|b6b0efb2b7b4cfc3e7f0b7ad3e8c66652c20ca5b
 
 # FM system - from LA.QSSI.14.0.r1-13100-qssi.0
 system_ext/lib64/fm_helium.so|5c9bf4a0ec6e9767b31571d127ac586c15eb3a8b
