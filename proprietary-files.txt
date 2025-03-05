@@ -530,7 +530,6 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|6e6249eb7df66b394
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|a1886680ffec08d17ac4d0605b76727bbf15a566
 
 # GPS - from LA.UM.9.1.r1-12900-SMxxx0.0
-vendor/bin/garden_app|6cc6499c8c7769f8278dc43c96465bad8e16e305
 vendor/bin/loc_launcher|be9f321e7c03e038749239ae4accd3db00949e2c
 vendor/bin/lowi-server|d94ebcc5499e0624f941bbf3a7aa259891513cd0
 vendor/bin/mlid|45e6e27038eb35f8fe7a61b9074252e4147fcf33
