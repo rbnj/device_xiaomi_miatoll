@@ -72,6 +72,21 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcrypto-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "$2"
             ;;
+        vendor/lib64/libalAILDC.so | vendor/lib64/libalhLDC.so | vendor/lib64/libalLDC.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_allocate" "$2"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_describe" "$2"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_lock" "$2"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_release" "$2"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_unlock" "$2"
+            ;;
+        vendor/lib64/libhvx_interface.so | vendor/lib64/libmialgo_rfs.so | vendor/lib64/libVDSuperPhotoAPI.so | vendor/lib64/libsnpe_dsp_domains_v2.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --clear-symbol-version "remote_handle_close" "$2"
+            "${PATCHELF}" --clear-symbol-version "remote_handle_invoke" "$2"
+            "${PATCHELF}" --clear-symbol-version "remote_handle_open" "$2"
+            "${PATCHELF}" --clear-symbol-version "remote_register_buf_attr" "$2"
+            ;;
         *)
             return 1
             ;;
