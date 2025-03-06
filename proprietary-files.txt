@@ -393,12 +393,12 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml|f76c894f3c6d5b6ed35113a088dc3174c9
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml|14d136e7fcc682311757d3edc0b9d3eaeba11815
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml|c63c37d067e3009735fbc54d4603d43d7d6623e1
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
-vendor/lib64/libcne.so|285a36e851fb28c9777d3069a9ec3c7baf28c357
+vendor/lib64/libcne.so;DISABLE_CHECKELF|285a36e851fb28c9777d3069a9ec3c7baf28c357
 vendor/lib64/libcneapiclient.so|0973dc05f6d6d9c469fc804693af79e6f3a5056a
 vendor/lib64/libcneoplookup.so|60d6abe85061de4fa75e5e4f69d477f37f1f8f64
 vendor/lib64/libcneqmiutils.so|c2e2658698eb8b312ca6b28c1a1088a331bb28b9
 vendor/lib64/libwms.so|e9947a07725f54cd9b13d416c90d93c43cf42656
-vendor/lib64/libwqe.so|a3229ba503d5f55923bfb6d00a0301ed1ac304d7
+vendor/lib64/libwqe.so;DISABLE_CHECKELF|a3229ba503d5f55923bfb6d00a0301ed1ac304d7
 vendor/lib64/libxml.so|6d5f9b6be0212bde7b961803fec9302e8529b54a
 vendor/lib64/vendor.qti.data.factory@2.0.so;MODULE_SUFFIX=_vendor|748bfbaa57a409b8962e2b1725e1415e423a7315
 vendor/lib64/vendor.qti.data.factory@2.1.so;MODULE_SUFFIX=_vendor|bb1f3fa22563282ee24bf03ca681fdc45551feef
@@ -531,7 +531,7 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|a1886680ffec08d17ac4
 
 # GPS - from LA.UM.9.1.r1-12900-SMxxx0.0
 vendor/bin/loc_launcher|be9f321e7c03e038749239ae4accd3db00949e2c
-vendor/bin/lowi-server|d94ebcc5499e0624f941bbf3a7aa259891513cd0
+vendor/bin/lowi-server;DISABLE_CHECKELF|d94ebcc5499e0624f941bbf3a7aa259891513cd0
 vendor/bin/mlid|45e6e27038eb35f8fe7a61b9074252e4147fcf33
 vendor/bin/slim_daemon|0f170ac5c5affdac731e8ba26ada03edfd180081
 vendor/bin/xtra-daemon|36df53948c13655ff5ff5b76882f28f9a4d039a8
