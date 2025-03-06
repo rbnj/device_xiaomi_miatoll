@@ -91,7 +91,7 @@ function blob_fixup() {
             "${PATCHELF}" --clear-symbol-version "remote_handle_open" "$2"
             "${PATCHELF}" --clear-symbol-version "remote_register_buf_attr" "$2"
             ;;
-        vendor/lib64/liblbs_core.so | vendor/lib64/liblocationservice.so)
+        vendor/lib64/liblbs_core.so | vendor/lib64/liblocationservice.so | vendor/bin/slim_daemon)
             [ "$2" = "" ] && return 0
             grep -q "liblbs_core_shim.so" "${2}" || "${PATCHELF}" --add-needed "liblbs_core_shim.so" "${2}"
             ;;

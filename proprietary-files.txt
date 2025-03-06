@@ -533,7 +533,7 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|a1886680ffec08d17ac4
 vendor/bin/loc_launcher|be9f321e7c03e038749239ae4accd3db00949e2c
 vendor/bin/lowi-server;DISABLE_CHECKELF|d94ebcc5499e0624f941bbf3a7aa259891513cd0
 vendor/bin/mlid|45e6e27038eb35f8fe7a61b9074252e4147fcf33
-vendor/bin/slim_daemon|0f170ac5c5affdac731e8ba26ada03edfd180081
+vendor/bin/slim_daemon|03c085b789499b2967dd8f283294bc646ba338d1
 vendor/bin/xtra-daemon|36df53948c13655ff5ff5b76882f28f9a4d039a8
 vendor/bin/xtwifi-client|69378f73eeb61789822de5aed4c268e3661c81ee
 vendor/bin/xtwifi-inet-agent|2453d2776049b9ef2b29f6abe1256359f321a088
