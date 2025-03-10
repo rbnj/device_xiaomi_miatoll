@@ -70,6 +70,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Dex2oat
+PRODUCT_VENDOR_PROPERTIES += \
+    dalvik.vm.dex2oat-cpu-set=4,5,6,7 \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.image-dex2oat-cpu-set=4,5,6,7 \
+    dalvik.vm.image-dex2oat-threads=4
+
 # Dex-preopt/ART
 ifeq ($(TARGET_BUILD_VARIANT), user)
 ART_BUILD_HOST_DEBUG := false
