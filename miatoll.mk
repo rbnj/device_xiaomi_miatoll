@@ -329,6 +329,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Platform
 TARGET_BOARD_PLATFORM := atoll
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats@1.0-service.mock
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
