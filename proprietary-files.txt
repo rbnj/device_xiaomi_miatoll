@@ -1055,7 +1055,7 @@ vendor/firmware/drv2624.bin
 vendor/firmware/drv2624.rtp
 
 # Wi-Fi
-vendor/bin/cnss-daemon
+vendor/bin/cnss-daemon;MODULE_SUFFIX=_miatoll;OVERRIDES=cnss-daemon
 vendor/bin/nv_mac
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 
