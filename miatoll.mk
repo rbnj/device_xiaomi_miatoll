@@ -169,10 +169,6 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
-# FRP
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # FUSE
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true
