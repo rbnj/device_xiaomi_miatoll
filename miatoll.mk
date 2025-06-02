@@ -161,14 +161,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# FM
-BOARD_HAVE_QCOM_FM := true
-
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
-
 # FUSE
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true
