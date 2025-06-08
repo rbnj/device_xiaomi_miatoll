@@ -138,6 +138,7 @@ vendor/lib64/libdng_sdk2vendor.so
 vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libft2vendor.so
+vendor/lib64/libhvx_interface.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libmegface.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libmiStereoFactoryRemapLib.so
@@ -691,21 +692,6 @@ vendor/lib64/libOmxWmaDec.so|103ca423a8bcf7900eadeec735d6a63118868935
 vendor/lib64/libmm-color-convertor.so|f404d2a1070a4f863c116e6defb5314d964d9269
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor|31e3fd826e9cbb77d44247202b6560044fefc1b7
 vendor/odm/etc/media_profiles_V1_0.xml|981dd4a7ffb9020aa1142930ff3ae6d07bda12aa
-
-# Neural-networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
-vendor/bin/npu_launcher
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
-vendor/lib64/libhexagon_nn_stub.so
-vendor/lib64/libhta_hexagon_runtime.so
-vendor/lib64/libhvx_interface.so
-vendor/lib64/libnpu.so
-vendor/lib64/unnhal-acc-adreno.so
-vendor/lib64/unnhal-acc-common.so
-vendor/lib64/unnhal-acc-hta.so
-vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
 vendor/etc/libnfc-nxp.conf
