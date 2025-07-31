@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "AOSPAMiatollSettingsOverlay",
+    name: "NeotericMiatollFrameworksOverlay",
     device_specific: true,
 }
