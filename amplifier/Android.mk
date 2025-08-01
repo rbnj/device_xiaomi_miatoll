@@ -19,9 +19,9 @@ LOCAL_C_INCLUDES += \
     $(call include-path-for, audio-utils) \
     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include \
     external/tinycompress/include \
-    vendor/qcom/opensource/audio-hal/primary-hal/hal \
-    vendor/qcom/opensource/audio-hal/primary-hal/hal/audio_extn \
-    vendor/qcom/opensource/audio-hal/primary-hal/hal/msm8974
+    hardware/qcom-caf/sm8150/audio/hal \
+    hardware/qcom-caf/sm8150/audio/hal/audio_extn \
+    hardware/qcom-caf/sm8150/audio/hal/msm8974
 
 LOCAL_HEADER_LIBRARIES += \
     qti_kernel_headers \
