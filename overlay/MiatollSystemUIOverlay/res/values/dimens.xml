@@ -26,4 +26,8 @@
     <dimen name="keyguard_affordance_fixed_radius">28dp</dimen>
     <dimen name="keyguard_affordance_fixed_padding">16dp</dimen>
 
+    <!-- Keyguard affordance -->
+    <dimen name="keyguard_affordance_horizontal_offset">32dp</dimen>
+    <dimen name="keyguard_affordance_vertical_offset">54dp</dimen>
+
 </resources>
