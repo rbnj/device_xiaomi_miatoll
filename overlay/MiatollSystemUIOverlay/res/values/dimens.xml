@@ -30,4 +30,7 @@
     <dimen name="keyguard_affordance_horizontal_offset">32dp</dimen>
     <dimen name="keyguard_affordance_vertical_offset">54dp</dimen>
 
+    <!-- Keyguard affordance shake amplitude -->
+    <dimen name="keyguard_affordance_shake_amplitude">3dp</dimen>
+
 </resources>
