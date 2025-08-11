@@ -1,3 +1,7 @@
 # Allow writing to files in /dev/input/event1
 allow hal_power_default input_device:dir r_dir_perms;
 allow hal_power_default input_device:chr_file rw_file_perms;
+
+# Allow Power HAL to access DT2W node
+allow hal_power_default sysfs_touchpanel:dir r_dir_perms;
+allow hal_power_default sysfs_touchpanel:file rw_file_perms;
