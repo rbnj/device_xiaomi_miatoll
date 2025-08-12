@@ -1,5 +1,5 @@
 cc_library_shared {
     name: "liblbs_core_shim",
     srcs: ["liblbs_core_shim.c"],
-    vendor_available: true,
+    vendor: true,
 }

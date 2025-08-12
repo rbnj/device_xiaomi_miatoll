@@ -1,5 +1,5 @@
 cc_library_shared {
     name: "libloc_api_shim",
     srcs: ["libloc_api_shim.c"],
-    vendor_available: true,
+    vendor: true,
 }
