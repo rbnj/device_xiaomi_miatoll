@@ -1,6 +1,5 @@
 //
-// Copyright (C) 2024 Paranoid Android
-//
+// SPDX-FileCopyrightText: Paranoid Android
 // SPDX-License-Identifier: Apache-2.0
 //
 
@@ -8,11 +7,12 @@ runtime_resource_overlay {
     name: "MiatollWifiOverlay",
     manifest: "AndroidManifest.xml",
     device_specific: true,
+    overrides: ["WifiResCommon_Sys"],
 }
 
 runtime_resource_overlay {
     name: "MiatollWifiMainlineOverlay",
     manifest: "AndroidManifestMainline.xml",
     device_specific: true,
+    overrides: ["WifiResCommonMainline_Sys"],
 }
-
