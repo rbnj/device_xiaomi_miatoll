@@ -67,6 +67,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib64/camera/components/com.vidhance.node.eis.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libui-v34.so" "${2}" || "${PATCHELF}" --replace-needed "libui.so" "libui-v34.so" "${2}"
+            ;;
         vendor/lib64/hw/fingerprint.fpc.default.so)
             [ "$2" = "" ] && return 0
             # NOP out report_input_event()
