@@ -23,6 +23,7 @@
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
 
+        <!-- AOSPA Edit: Boost CPU and GPU frequencies for main 2s app launch -->
         <!-- Type="1", main launch boost of 2sec -->
        <Config
            Id="0x00001081" Type="1" Enable="true" Timeout="2000"
@@ -74,6 +75,7 @@
         <!-- CPU_DOWN_FREQ_THRESHOLD_US, val us -->
 
         <!-- Type="6", Game Launch boost -->
+        <!-- AOSPA Edit: Increase BIG Core CPU freq for Game Launch Boost -->
         <Config
             Id="0x00001081" Type="6" Enable="true" Timeout="2000"
             Resources="0x40408000, 0x5,
@@ -86,6 +88,7 @@
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- AOSPA Edit: Modify CPU freq for Animation Boost -->
        <Config
             Id="0x00001083" Enable="true" Timeout="400"
             Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 2016, 0x40800100, 1708" />
@@ -97,6 +100,7 @@
         <!-- SCHEDBOOST resource opcode, value-->
 
         <!-- Type="1", Vertical Scroll boost -->
+        <!-- AOSPA Edit: Increase CPU freq for Vertical Scroll Boost -->
         <Config
             Id="0x00001080" Type="1" Enable="true"
             Resources="0x43010000, 0x26, 0x40800000, 1363, 0x40800100, 1363, 0x40C00000, 2" />
@@ -108,6 +112,7 @@
         <!-- SCHEDBOOST resource opcode, value-->
 
         <!-- Type="2", Horizontal Scroll boost -->
+        <!-- AOSPA Edit: Increase CPU freq for Horizontal Scroll Boost -->
         <Config
             Id="0x00001080" Type="2" Enable="true"
             Resources="0x43010000, 0x26, 0x40800000, 1363, 0x40800100, 1363, 0x40C00000, 2" />
@@ -120,6 +125,7 @@
         <!-- SCHEDBOOST resource opcode, value-->
 
         <!-- Type="4", Pre-Fling boost -->
+        <!-- AOSPA Edit: Increase CPU freq for Pre-Fling Boost -->
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80"
             Resources="0x43010000, 0x26, 0x40800000, 1363, 0x40800100, 1363, 0x40C00000, 2" />
@@ -134,6 +140,7 @@
         <!-- LPM Bias resource opcode, value -->
 
         <!-- Type="", MTP boost -->
+        <!-- AOSPA Edit: Increase CPU freq for MTP Boost -->
         <Config
             Id="0x00001086" Enable="true"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1708,
@@ -168,6 +175,7 @@
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- GPU MIN_FREQUENCY resource opcode,value-->
         <!-- Type="", Rotation animation boost -->
+        <!-- AOSPA Edit: Increase CPU freq for Rotation Boost -->
         <Config
             Id="0x00001090" Enable="true" Timeout="1000"
             Resources="0x40800100, 1516, 0x42804000, 0" />
@@ -177,6 +185,7 @@
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
 
          <!-- Type="1", Drag boost -->
+         <!-- AOSPA Edit: Increase CPU freq for Drag Boost -->
          <Config
              Id="0x00001087" Type="1" Enable="true" Timeout="0"
              Resources="0x40800000, 1363, 0x40800100, 1708" />
