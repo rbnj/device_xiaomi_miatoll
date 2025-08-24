@@ -179,7 +179,7 @@
          <!-- Type="1", Drag boost -->
          <Config
              Id="0x00001087" Type="1" Enable="true" Timeout="0"
-             Resources="0x40800000, 1708, 0x40800100, 1324" />
+             Resources="0x40800000, 1363, 0x40800100, 1708" />
 
     <!--Performance mode-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
