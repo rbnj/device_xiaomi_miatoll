@@ -22,6 +22,9 @@ $(call inherit-product, device/xiaomi/miatoll/device.mk)
 # Inherit from the Neoteric configuration.
 $(call inherit-product, vendor/neoteric/target/product/neoteric-target.mk)
 
+# Declare updates support
+IS_OFFICIAL := true
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
