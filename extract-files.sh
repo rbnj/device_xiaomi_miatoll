@@ -67,6 +67,11 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib64/hw/fingerprint.fpc.default.so)
+            [ "$2" = "" ] && return 0
+            # NOP out report_input_event()
+            "${SIGSCAN}" -p "30 00 00 90 11 3a 42 f9" -P "30 00 00 90 1f 20 03 d5" -f "${2}"
+            ;;
         vendor/etc/seccomp_policy/atfwd@2.0.policy)
             [ "$2" = "" ] && return 0
             grep -q "gettid: 1" "${2}" || echo "gettid: 1" >> "${2}"
