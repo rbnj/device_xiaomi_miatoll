@@ -19,6 +19,8 @@ property Name is called. -->
 
                 <!--Vendor Properties -->
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
+                <!-- AOSPA Edit: Disable IOPd explicitly -->
+                <Prop Name="vendor.iop.enabled" Value="false" />
                 <!-- AOSPA Edit: Enable Preferred Apps for atoll -->
                 <Prop Name="vendor.iop.enable_speed" Value="true" /> <!--rename to perf-->
 
