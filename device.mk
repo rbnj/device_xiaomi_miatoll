@@ -258,6 +258,43 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.lmk.force_inkernel_lmk=true
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    AiAiEcho \
+    AiAiTextClassifier \
+    AppLinksAsyncVerifierV2 \
+    BaseDepthController \
+    GraphicsEnvironment \
+    Diag_Lib \
+    CCodec \
+    CCodecBufferChannel \
+    CCodecConfig \
+    Codec2Client \
+    LazyLogger \
+    PackageCacher \
+    PackageSettings \
+    QtiLinkBandwidthEstimator-0 \
+    SDM \
+    SRE \
+    WifiHAL \
+    WifiService \
+    cnss-daemon \
+    CameraService \
+    ForegroundUtils \
+    sensors \
+    sensors-hal \
+    a2dp_offload \
+    bluetooth-a2dp \
+    BluetoothMetrics \
+    DisplayManagerService \
+    DisplayModeController \
+    FrameTracker
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_VENDOR_PROPERTIES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=E)
+endif
+
 # Media
 TARGET_DISABLE_C2_CODEC := false
 
