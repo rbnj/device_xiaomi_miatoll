@@ -300,6 +300,13 @@ endif
 TARGET_DISABLE_C2_CODEC := false
 
 # NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    libnfc-nci \
+    libnfc_nci_jni \
+    Tag \
+    libnfc_vendor_extn_sys
+
 TARGET_NFC_SKU := joyeuse
 
 PRODUCT_COPY_FILES += \
