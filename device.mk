@@ -409,6 +409,11 @@ PRODUCT_COPY_FILES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Skia tracing
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.hwui.skia_tracing_enabled=false \
+    debug.hwui.skia_use_perfetto_track_events=false
+
 # SoC
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.model=SM7125
