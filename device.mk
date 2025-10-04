@@ -112,6 +112,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
+    debug.sf.enable_egl_image_tracker=0 \
     persist.sys.sf.color_mode=9 \
     persist.sys.sf.color_saturation=1.0 \
     persist.sys.sf.native_mode=2 \
