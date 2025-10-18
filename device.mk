@@ -298,7 +298,30 @@ PRODUCT_VENDOR_PROPERTIES += \
 endif
 
 # Media
-TARGET_DISABLE_C2_CODEC := false
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.2.vendor \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libcodec2.vendor \
+    libcodec2_hal_common.so.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl_plugin.so.vendor \
+    libcodec2_vndk.vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    $(LOCAL_PATH)/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
+    $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
+    ro.media.recorder-max-base-layer-fps=60 \
+    persist.mm.enable.prefetch=true \
+    vendor.mm.enable.qcom_parser=16777199
+
+PRODUCT_VENDOR_PROPERTIES += \
+    debug.stagefright.c2inputsurface=-1 \
+    vendor.video.disable.ubwc=1
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -378,7 +401,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     gps \
     init \
-    media \
     nfc \
     overlay \
     perf \
