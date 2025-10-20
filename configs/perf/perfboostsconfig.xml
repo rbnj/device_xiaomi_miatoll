@@ -103,7 +103,7 @@
         <!-- AOSPA Edit: Increase CPU freq for Vertical Scroll Boost -->
         <Config
             Id="0x00001080" Type="1" Enable="true"
-            Resources="0x43010000, 0x26, 0x40800000, 1267, 0x40800100, 1516, 0x40C00000, 2" />
+            Resources="0x43010000, 0x26, 0x40800000, 979, 0x40800100, 1516, 0x40C00000, 2" />
 
     <!--Horizontal Scroll boost-->
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -115,7 +115,7 @@
         <!-- AOSPA Edit: Increase CPU freq for Horizontal Scroll Boost -->
         <Config
             Id="0x00001080" Type="2" Enable="true"
-            Resources="0x43010000, 0x26, 0x40800000, 1267, 0x40800100, 1516, 0x40C00000, 2" />
+            Resources="0x43010000, 0x26, 0x40800000, 979, 0x40800100, 1516, 0x40C00000, 2" />
 
 
     <!--Pre-Fling boost-->
