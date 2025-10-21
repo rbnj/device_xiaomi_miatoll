@@ -240,6 +240,9 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.bpf.kver_override=5.4.186
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
