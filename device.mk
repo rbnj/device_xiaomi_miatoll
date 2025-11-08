@@ -463,6 +463,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 endif
 
 PRODUCT_VENDOR_PROPERTIES += \
+    ro.usb.uvc.disable_video_encode_flag=true \
     ro.usb.uvc.enabled=true
 
 PRODUCT_HAS_GADGET_HAL := true
