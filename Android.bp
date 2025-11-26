@@ -12,6 +12,13 @@ soong_namespace {
 }
 
 install_symlink {
+    name: "CneApp.libvndfwk_detect_jni.qti_symlink",
+    vendor: true,
+    installed_location: "app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so",
+    symlink_target: "/vendor/lib64/libvndfwk_detect_jni.qti.so",
+}
+
+install_symlink {
     name: "firmware_wlan_mac.bin_symlink",
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/wlan_mac.bin",
