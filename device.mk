@@ -166,6 +166,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true
 
+# GFX
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.config.avoid_gfx_accel=true
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
