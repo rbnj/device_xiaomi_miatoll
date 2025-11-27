@@ -435,6 +435,7 @@ TARGET_GPS_COMPONENT_VARIANT := gps
 
 # Radio
 PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.manual_nw_rej_ct=1 \
