@@ -336,6 +336,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.stagefright.c2inputsurface=-1 \
     vendor.video.disable.ubwc=1
 
+# Enable QC2 bufferqueue block-pool
+PRODUCT_PROPERTY_OVERRIDES += vendor.qc2.use.bqpool=1
+
 # Neural Networks
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.nnapi.extensions.deny_on_product=true
