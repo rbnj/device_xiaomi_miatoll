@@ -498,6 +498,10 @@ PRODUCT_COPY_FILES += \
 # ViPER4Android FX
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
+# VSync
+PRODUCT_VENDOR_PROPERTIES += \
+    debug.cpurend.vsync=false
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
