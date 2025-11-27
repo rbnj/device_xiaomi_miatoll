@@ -10,7 +10,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Android Go configurations
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := \
+    frameworks/base/boot/boot-image-profile.txt \
+    frameworks/base/boot/boot-image-profile-extra.txt
 
 # Audio
 PRODUCT_PACKAGES += \
