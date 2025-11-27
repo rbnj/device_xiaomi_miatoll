@@ -336,6 +336,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.stagefright.c2inputsurface=-1 \
     vendor.video.disable.ubwc=1
 
+# Neural Networks
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.nnapi.extensions.deny_on_product=true
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
