@@ -340,6 +340,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += vendor.qc2.use.bqpool=1
 
+# Memory tagging
+PRODUCT_SYSTEM_PROPERTIES += \
+    arm64.memtag.process.system_server=off
+
 # Neural Networks
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.nnapi.extensions.deny_on_product=true
