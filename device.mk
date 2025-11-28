@@ -252,7 +252,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.bpf.kver_override=5.4.186
+    ro.bpf.kver_override=5.4.299
 
 # Keymaster
 PRODUCT_PACKAGES += \
