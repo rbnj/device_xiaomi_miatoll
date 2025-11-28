@@ -342,6 +342,9 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.qc2.use.bqpool=1
 
 # Memory tagging
 PRODUCT_SYSTEM_PROPERTIES += \
+    persist.arm64.memtag.app.com.android.se=off \
+    persist.arm64.memtag.app.com.android.nfc=off \
+    persist.arm64.memtag.app.com.google.android.bluetooth=off \
     persist.arm64.memtag.system_server=off
 
 # Neural Networks
